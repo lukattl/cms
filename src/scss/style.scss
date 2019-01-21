@@ -1,0 +1,108 @@
+/*####### MAIN STYLES ######*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    background: -moz-linear-gradient(top, rgba(153,153,153,1) 0%, rgba(152,154,156,0.7) 4%, rgba(149,158,165,1) 15%, rgba(143,164,181,0.7) 35%, rgba(142,165,183,0.7) 37%, rgba(141,166,185,0.7) 39%, rgba(141,166,186,0.7) 40%, rgba(141,166,187,0.7) 41%, rgba(141,166,188,0.7) 42%, rgba(141,166,189,0.7) 43%, rgba(140,167,191,0.7) 46%, rgba(140,167,192,0.7) 47%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(153,153,153,1) 0%,rgba(152,154,156,0.7) 4%,rgba(149,158,165,1) 15%,rgba(143,164,181,0.7) 35%,rgba(142,165,183,0.7) 37%,rgba(141,166,185,0.7) 39%,rgba(141,166,186,0.7) 40%,rgba(141,166,187,0.7) 41%,rgba(141,166,188,0.7) 42%,rgba(141,166,189,0.7) 43%,rgba(140,167,191,0.7) 46%,rgba(140,167,192,0.7) 47%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(153,153,153,1) 0%,rgba(152,154,156,0.7) 4%,rgba(149,158,165,1) 15%,rgba(143,164,181,0.7) 35%,rgba(142,165,183,0.7) 37%,rgba(141,166,185,0.7) 39%,rgba(141,166,186,0.7) 40%,rgba(141,166,187,0.7) 41%,rgba(141,166,188,0.7) 42%,rgba(141,166,189,0.7) 43%,rgba(140,167,191,0.7) 46%,rgba(140,167,192,0.7) 47%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */  
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin-bottom: 60px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar.bg-dark{
+    background: transparentize($color: #eee, $amount: 0.9);
+}
+
+.navbar-dark{
+    color: $dark !important;
+}
+
+.navbar{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+
+    
+    .navbar-nav{
+        padding-left: 1rem;
+        .nav-item{
+            &:last-child{
+                .nav-link{
+                    padding-right: 2;
+                }
+            }
+        }
+    }
+}
+
+.jumbotron{
+    background: url('../../img/wall.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.walltext{
+    color: $dark !important;
+}
+.opc-6{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+.nav-tabs{
+    .nav-item{
+        color: $dark;
+    }
+    .nav-link{
+        color: $dark !important;
+    }
+}
+
+.addOn{
+    background-color: transparent !important;
+    border: 1px double $dark !important;
+    color: $dark;
+}
+
+.input-daterange{
+    .form-control{
+        border: 1px double $dark;
+        height: 1.7rem;
+    }
+
+    .input-group{
+        height: 1.7rem;
+    }
+}
+.btnS{
+    height: 1.7rem;
+    width: 8rem;
+}
+
+.border-pp{
+    border-left: 5px double blue;
+}
+
+.border-tab{
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+}
